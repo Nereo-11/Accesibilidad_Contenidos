@@ -1,0 +1,101 @@
+body {
+    background-color: #f0f4f8; /* Color de fondo suave para toda la página */
+    margin: 0;
+    font-family: 'Comic Sans', sans-serif; /* Fuente general */
+}
+
+h1 {
+    text-align: center; /* Centrar el texto */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #2c3e50; /* Color oscuro y elegante */
+    margin-bottom: 20px; /* Espacio inferior */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+h1:hover {
+    color: #3498db; /* Cambiar a verde brillante al pasar el cursor */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
+
+img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px; /* Espacio superior */
+    background-color: #ffffff; /* Color de fondo blanco para la tabla */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde suave */
+}
+
+th {
+    background-color: #175A87; /* Color de fondo azul para encabezados */
+    color: white; /* Color del texto en encabezados */
+}
+
+/* Estilos para el contenedor del formulario */
+div {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 50%;
+    margin: auto; /* Centrar el div en la página */
+}
+
+/* Efecto de hover en el contenedor del formulario */
+div:hover {
+    transform: scale(1.02); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos para etiquetas y campos de entrada */
+label {
+    margin: 20px 0;
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior entre campos */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #3498db; /* Cambiar color del borde al enfocar a azul brillante */
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #12542E; /* Color de fondo verde para el botón */
+    color: white; /* Color del texto en el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+button:hover {
+    background-color: #219653; /* Color más oscuro al pasar el cursor por encima */
+}
+
+a {
+    font-family: 'Comic Sans', sans-serif; /* Fuente general */
+}

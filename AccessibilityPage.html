@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOMOVIES</title>
+    <link rel="stylesheet" href="page.css"> <!-- Enlace a un archivo CSS externo -->
+</head>
+<body>
+    <header>
+        <h1>NEOFLIX</h1> 
+    </header>
+
+        <div>
+            <form id="movieForm">
+
+                <label for="nombre">Pelicula o Serie</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+        
+                <label for="status">Estado</label><br>
+                <select name="status" id="status">
+                    <option value="Visto">Visto</option>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Proceso">Proceso</option>
+                </select><br>
+        
+                <label for="imagen">URL de imagen</label><br>
+                <input type="text" id="url" name="imagen" required><br>
+                <br>
+        
+                <label for="stars">Puntuación</label><br>
+                <select name="stars" id="stars">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+        
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        
+        <main>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Pelicula o Serie</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Caratula</th>
+                        <th scope="col">Puntuación</th>
+                    </tr>
+                </thead>
+                <tbody></tbody> 
+            </table>
+        </main>
+
+    <footer>
+        <br>
+        <p>&copy; 2024 Nereo Aranda. Todos los derechos reservados.</p> <!-- Información del pie de página -->
+        <a href="https://www.instagram.com/nereo_uriel/">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlace a un archivo JavaScript externo -->
+</body>
+</html>
