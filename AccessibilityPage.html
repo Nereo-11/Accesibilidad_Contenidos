@@ -14,11 +14,12 @@
         <div>
             <form id="movieForm">
 
-                <label for="nombre">Pelicula o Serie</label><br>
+                <label for="nombre">Película o Serie</label><br>
                 <input type="text" id="nombre" name="nombre" required><br>
         
                 <label for="status">Estado</label><br>
                 <select name="status" id="status">
+                    <option value="" disabled selected>Seleccione una opción</option>
                     <option value="Visto">Visto</option>
                     <option value="Pendiente">Pendiente</option>
                     <option value="Proceso">Proceso</option>
@@ -30,6 +31,7 @@
         
                 <label for="stars">Puntuación</label><br>
                 <select name="stars" id="stars">
+                    <option value="" disabled selected>Seleccione una calificación</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -45,9 +47,9 @@
             <table border="1">
                 <thead>
                     <tr>
-                        <th scope="col">Pelicula o Serie</th>
+                        <th scope="col">Película o Serie</th>
                         <th scope="col">Estado</th>
-                        <th scope="col">Caratula</th>
+                        <th scope="col">Carátula</th>
                         <th scope="col">Puntuación</th>
                     </tr>
                 </thead>
