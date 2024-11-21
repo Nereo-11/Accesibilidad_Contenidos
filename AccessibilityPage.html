@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOMOVIES</title>
+    <link rel="stylesheet" href="page.css"> <!-- Enlace a un archivo CSS externo -->
+</head>
+<body>
+    <header>
+        <h1>NEOFLIX</h1> 
+    </header>
+
+        <div class="formulario">
+            <form id="movieForm">
+
+                <label for="nombre">Pelicula o Serie</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+        
+                <label for="status">Estado</label><br>
+                <select name="status" id="status">
+                    <option value="Visto">Visto</option>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Proceso">Proceso</option>
+                </select><br>
+        
+                <label for="imagen">URL de imagen</label><br>
+                <input type="text" id="url" name="imagen" required><br>
+                <br>
+        
+                <label for="stars">Puntuación</label><br>
+                <select name="stars" id="stars">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+        
+                
+
+                <button type="submit" id="alert-trigger">Agregar</button>
+
+                 <div id="example" role="alert"></div>
+
+                 <script type="text/template" id="alert-template">
+                 <p>Pelicula Agregada</p>
+                 </script>
+            </form>
+        </div>
+        
+        <main>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Pelicula o Serie</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Caratula</th>
+                        <th scope="col">Puntuación</th>
+                    </tr>
+                </thead>
+                <tbody></tbody> 
+            </table>
+        </main> <br>
+
+        <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="Highlighted television shows">
+            <div class="carousel-inner" >
+              <div class="controls">
+                <button type="button" class="rotation pause" aria-label="Stop automatic slide show">
+                  <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+                    <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+          
+                    <polygon class="pause" points="17 8 17 20"></polygon>
+          
+                    <polygon class="pause" points="24 8 24 20"></polygon>
+          
+                    <polygon class="play" points="15 8 15 20 27 14"></polygon>
+                  </svg>
+                </button>
+          
+                <button type="button" class="previous" aria-controls="myCarousel-items" aria-label="Previous Slide">
+                  <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+                    <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+                    <polygon points="9 14 21 8 21 11 33 11 33 17 21 17 21 20"></polygon>
+                  </svg>
+                </button>
+          
+                <button type="button" class="next" aria-controls="myCarousel-items" aria-label="Next Slide">
+                  <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+                    <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+                    <polygon points="9 11 21 11 21 8 33 14 21 20 21 17 9 17"></polygon>
+                  </svg>
+                </button>
+              </div>
+        
+          
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                  <div class="carousel-image">
+                    <a href="#">
+                      <img src="https://th.bing.com/th/id/R.2cd3400ed66ac6a5069194b37a61edfb?rik=F8CZwCWUKvClAw&riu=http%3a%2f%2fwww.fondoswiki.com%2fUploads%2ffondoswiki.com%2fImagenesGrandes%2fsaga-crepusculo.jpg&ehk=LaqNhIx2E3bkao4aMFODMXu1B9G%2fhakQcb%2bx0qTLKiY%3d&risl=&pid=ImgRaw&r=0" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
+                    </a>
+                  </div>
+          
+                  <div id="caption" class="carousel-caption">
+                    <h3>
+                      <a href="#" id="carousel-label-4"> Crepusculo Serie  </a>
+                    </h3>
+                      <p><span class="contrast">Ultimos episodios Netflix </span></p>
+                  </div>
+                </div>
+                
+          
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                  <div class="carousel-image">
+                    <a href="#">
+                      <img src="https://criticalhits.com.br/wp-content/uploads/2020/11/need-for-speed-hot-pursuit-remastered-01.jpg" alt="British flag with WILL-TV host David Thiel.">
+                    </a>
+                  </div>
+          
+                  <div id="caption" class="carousel-caption">
+                    <h3>
+                      <a href="#" id="carousel-label-5"> Need For Speed Movie </a>
+                    </h3>
+                  </div>
+                  
+                </div>
+                
+          
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                  <div class="carousel-image">
+                    <a href="#">
+                      <img src="https://th.bing.com/th/id/OIP.8Dl7lns6P8qbBPjElfUPaAHaEK?rs=1&pid=ImgDetMain" alt="Mid-American Gardener panelists on the set">
+                    </a>
+                  </div>
+          
+                  <div id="caption" class="carousel-caption">
+                    <h3>
+                      <a href="#" id="carousel-label-6"> Los Juegos del Hambre </a>
+                    </h3>
+          
+                  
+                      <p><span class="contrast">Ultima Película</span></p>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+            
+          </section><br>
+
+        <p>
+            The value of this meter changes every 5 seconds.
+            Use the pause button to stop changes.
+          </p>
+          <h3 id="cpu_usage_label">Central Processing Unit (CPU) Usage</h3>
+          <p>
+            <button type="button" class="play-meters">Pause Updates</button>
+          </p>
+          <div role="meter" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-labelledby="cpu_usage_label">
+            <svg width="100" height="100" class="fill" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="100%" height="100%" fill="currentcolor"></rect>
+            </svg>
+          </div><br>
+
+
+          
+    
+
+    <footer>
+        <br>
+        <p>&copy; 2024 Nereo Aranda. Todos los derechos reservados.</p> <!-- Información del pie de página -->
+        <a href="https://www.instagram.com/nereo_uriel/">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlace a un archivo JavaScript externo -->
+</body>
+</html>
