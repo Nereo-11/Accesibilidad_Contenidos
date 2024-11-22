@@ -5,38 +5,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const alertTemplate = document.getElementById("alert-template").innerHTML;
 
   form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Evita el envío del formulario
+    event.preventDefault(); // Evita el envío del formulario
 
-      // Validar si todos los campos están completos
-      const nombre = document.getElementById("nombre").value.trim();
-      const status = document.getElementById("status").value.trim();
-      const url = document.getElementById("url").value.trim();
-      const stars = document.getElementById("stars").value.trim();
+    // Validar si todos los campos están completos
+    const nombre = document.getElementById("nombre").value.trim();
+    const status = document.getElementById("status").value.trim();
+    const url = document.getElementById("url").value.trim();
+    const stars = document.getElementById("stars").value.trim();
 
-      if (nombre && status && url && stars) {
-          // Crear nueva fila en la tabla
-          const newRow = `
-              <tr>
-                  <td scope="row">${nombre}</td>
-                  <td scope="row">${status}</td>
-                  <td scope="row"><img src="${url}" alt="Imagen no disponible" style="width: 150px; height: auto;"></td>
-                  <td scope="row">${stars}/5</td>
-              </tr>
-          `;
-          tableBody.insertAdjacentHTML("beforeend", newRow); // Agrega la nueva fila
+    if (nombre && status && url && stars) {
+      // Crear nueva fila en la tabla
+      const newRow = `
+          <tr>
+              <td scope="row">${nombre}</td>
+              <td scope="row">${status}</td>
+              <td scope="row"><img src="${url}" alt="Imagen no disponible" style="width: 150px; height: auto;"></td>
+              <td scope="row">${stars}/5</td>
+          </tr>
+      `;
+      tableBody.insertAdjacentHTML("beforeend", newRow); // Agrega la nueva fila
 
-          // Mostrar el mensaje de alerta
-          alertContainer.innerHTML = alertTemplate;
-          alertContainer.style.display = "block";
+      // Mostrar el mensaje de alerta
+      alertContainer.innerHTML = alertTemplate;
+      alertContainer.style.display = "block";
 
-          form.reset(); // Limpia el formulario
-      } else {
-          // Mostrar mensaje de error si hay campos vacíos
-          alert("Por favor, completa todos los campos antes de agregar la película.");
-      }
+      form.reset(); // Limpia el formulario
+    } else {
+      // Mostrar mensaje de error si hay campos vacíos
+      alert("Por favor, completa todos los campos antes de agregar la película.");
+    }
+  });
+
+  // Evento para cerrar la alerta
+  alertContainer.addEventListener("click", (event) => {
+    if (event.target.classList.contains("close-alert")) {
+      alertContainer.style.display = "none";
+    }
   });
 });
-
 
 'use strict';
 

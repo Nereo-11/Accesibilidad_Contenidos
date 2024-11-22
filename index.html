@@ -41,11 +41,19 @@
 
                 <button type="submit" id="alert-trigger">Agregar</button>
 
-                 <div id="example" role="alert"></div>
+<div id="example" role="alert" style="display: none; position: relative; border: 1px solid #ccc; padding: 10px; background-color: #f8f9fa; border-radius: 5px; margin-top: 10px;">
+    <!-- El contenido del alert será dinámico -->
+</div>
 
-                 <script type="text/template" id="alert-template">
-                 <p>Pelicula Agregada</p>
-                 </script>
+<script type="text/template" id="alert-template">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <p style="margin: 0;">Película agregada exitosamente.</p>
+        <button class="close-alert" style="background: none; border: none; font-size: 16px; cursor: pointer; color: #888;" aria-label="Cerrar alerta">&times;</button>
+    </div>
+</script>
+
+
+
             </form>
         </div>
         
